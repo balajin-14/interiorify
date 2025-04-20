@@ -7,7 +7,7 @@ const furnitureData = [
   {
     id: 1,
     title: "Elegant Oak Dining Table",
-    image: "/assets/furniture1.jpg",
+    image: "assets/furniture1.jpg",
     description: "Crafted from premium oak wood, this dining table brings timeless charm...",
     specs: [
       "Material: Solid oak wood",
@@ -19,7 +19,7 @@ const furnitureData = [
   {
     id: 2,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture2.jpg",
+    image: "assets/furniture2.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
@@ -31,7 +31,7 @@ const furnitureData = [
   {
     id: 3,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture3.jpg",
+    image: "assets/furniture3.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
@@ -43,7 +43,7 @@ const furnitureData = [
   {
     id: 4,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture4.jpg",
+    image: "assets/furniture4.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
@@ -55,7 +55,7 @@ const furnitureData = [
   {
     id: 5,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture5.jpg",
+    image: "assets/furniture5.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
@@ -67,7 +67,7 @@ const furnitureData = [
   {
     id: 6,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture6.jpg",
+    image: "assets/furniture6.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
@@ -79,7 +79,7 @@ const furnitureData = [
   {
     id: 7,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture7.jpg",
+    image: "assets/furniture7.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
@@ -91,7 +91,7 @@ const furnitureData = [
   {
     id: 8,
     title: "Modern Velvet Sofa",
-    image: "/assets/furniture8.jpg",
+    image: "assets/furniture8.jpg",
     description: "Luxurious and comfortable, this velvet sofa is perfect for relaxing evenings.",
     specs: [
       "Material: Soft velvet fabric",
