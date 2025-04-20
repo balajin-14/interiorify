@@ -37,7 +37,7 @@ export default function AboutSection() {
         {/* Image (Right) */}
         <div className="md:w-1/2">
           <img
-            src="/assets/about.jpg"
+            src="assets/about.jpg"
             alt="About Us"
             className="w-full rounded-2xl shadow-lg object-cover max-h-[500px]"
           />

@@ -16,11 +16,11 @@ const HeroSection = () => {
 
   const images = useMemo(
     () => [
-      "./assets/hero1.jpg",
-      "./assets/hero2.jpg",
-      "./assets/hero3.jpg",
-      "./assets/hero4.jpg",
-      "./assets/hero5.jpg",
+      "/assets/hero1.jpg",
+      "/assets/hero2.jpg",
+      "/assets/hero3.jpg",
+      "/assets/hero4.jpg",
+      "/assets/hero5.jpg",
     ],
     []
   );
