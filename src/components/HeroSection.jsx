@@ -31,7 +31,7 @@ const HeroSection = () => {
 
   // slide logic
   useEffect(() => {
-    const iv = setInterval(() => setCurrent(i => (i+1)%images.length), 3000);
+    const iv = setInterval(() => setCurrent(i => (i+1)%images.length), 15000);
     return () => clearInterval(iv);
   }, []);
 
