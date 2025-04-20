@@ -4,7 +4,8 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="bg-white text-gray-800 py-20 px-4 md:px-16"
+      className="text-gray-800 py-20 px-4 md:px-16"
+      style={{ backgroundColor: "#F2EFE7" }} // Updated background color
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Description (Left) */}

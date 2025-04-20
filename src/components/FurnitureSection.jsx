@@ -1,38 +1,37 @@
-// src/components/FurnitureSection.jsx
-import React, { useState } from "react";
+import React from "react";
 
-const IMAGES = [
-  "furniture1.jpg",
-  "furniture2.jpg",
-  "furniture3.jpg",
-  "furniture4.jpg",
-  "furniture5.jpg",
-  "furniture6.jpg",
-  "furniture7.jpg",
-  "furniture8.jpg",
-];
+export default function FurnitureSection({ furnitureList, onSelect }) {
+  const handleClick = (item) => {
+    onSelect(item);
+    const descSection = document.getElementById("furniture-description");
+    if (descSection) {
+      descSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-export default function FurnitureSection() {
-  const [paused, setPaused] = useState(false);
+  // Duplicate images for infinite loop effect
+  const duplicatedList = [...furnitureList, ...furnitureList];
 
   return (
-    <section id="furnitures" className="py-12 overflow-hidden">
-      <div
-        className="flex w-[200%] animate-scroll"
-        style={{ animationPlayState: paused ? "paused" : "running" }}
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-      >
-        {/* Render two sets of images for seamless looping */}
-        {[...IMAGES, ...IMAGES].map((file, idx) => (
-          <div key={idx} className="w-1/4 flex-shrink-0 p-2">
+    <section className="py-12" id="furniture" style={{ backgroundColor: "#F2EFE7" }}>
+      {/* Centered Title */}
+      <div className="px-4 md:px-16 mb-6 text-center">
+        <h2 className="text-3xl font-bold text-gray-800">Explore Our Furnitures</h2>
+      </div>
+
+      {/* Continuous Sliding Container */}
+      <div className="relative overflow-hidden px-4 md:px-16 group">
+        <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
+          {duplicatedList.map((item, idx) => (
             <img
-              src={`/assets/${file}`}
-              alt={`Furniture ${idx % IMAGES.length + 1}`}
-              className="w-full h-48 object-cover rounded-lg shadow-lg"
+              key={`${item.id}-${idx}`}
+              src={item.image}
+              alt={item.title}
+              className="w-64 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+              onClick={() => handleClick(item)}
             />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
