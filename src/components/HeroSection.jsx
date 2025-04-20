@@ -16,11 +16,11 @@ const HeroSection = () => {
 
   const images = useMemo(
     () => [
-      "/public/assets/hero1.jpg",
-      "/public/assets/hero2.jpg",
-      "/public/assets/hero3.jpg",
-      "/public/assets/hero4.jpg",
-      "/public/assets/hero5.jpg",
+      "public/assets/hero1.jpg",
+      "public/assets/hero2.jpg",
+      "public/assets/hero3.jpg",
+      "public/assets/hero4.jpg",
+      "public/assets/hero5.jpg",
     ],
     []
   );
@@ -31,7 +31,7 @@ const HeroSection = () => {
 
   // slide logic
   useEffect(() => {
-    const iv = setInterval(() => setCurrent(i => (i+1)%images.length), 10000);
+    const iv = setInterval(() => setCurrent(i => (i+1)%images.length), 3000);
     return () => clearInterval(iv);
   }, []);
 
