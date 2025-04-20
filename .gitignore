@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 # Local SSL certs (optional)
 /*.pem
+
+# .env files containing sensitive data
+.env

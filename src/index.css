@@ -47,3 +47,6 @@
     width: max-content;
   }
   
+html {
+  scroll-behavior: smooth;
+}

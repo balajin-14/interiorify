@@ -14,21 +14,24 @@ export default function AboutSection() {
             About Us
           </h2>
           <p className="text-lg leading-relaxed text-gray-700">
-            At Interiorify, we’re passionate about transforming ordinary spaces 
-            into stunning, functional interiors that reflect your personality 
-            and lifestyle. From initial concept to final reveal, our team works 
+            At Interiorify, we’re passionate about transforming ordinary spaces
+            into stunning, functional interiors that reflect your personality
+            and lifestyle. From initial concept to final reveal, our team works
             closely with you to ensure every detail is perfect.
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
-            Whether you’re looking for a full home makeover or a single-room refresh, 
-            our bespoke design solutions and professional project management 
-            guarantee an easy, enjoyable experience.
+            Whether you’re looking for a full home makeover or a single-room
+            refresh, our bespoke design solutions and professional project
+            management guarantee an easy, enjoyable experience.
           </p>
-          <button
+          <a
+            href="https://wa.me/1234567890?text=Hello%20Interiorify%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-block bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition"
           >
             More
-          </button>
+          </a>
         </div>
 
         {/* Image (Right) */}
